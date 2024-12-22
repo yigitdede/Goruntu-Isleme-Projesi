@@ -1,7 +1,13 @@
 # Goruntu-Isleme-Projesi
 
 Bu proje, 10 farklı hayvan türü (Leopar, Dolphin, Aslan, Tilki, Moose, Tavşan, At, Sincap, Yarasa, Goril) sınıflandırmasını amaçlamaktadır. Görüntü işleme ve derin öğrenme teknikleriyle modelin doğruluğu artırılmaya çalışılmıştır. Ayrıca, modelin manipülasyona karşı dayanıklılığı çeşitli testlerle değerlendirilmiştir.
-
+## İçindekiler
+- [Proje Aşamaları](#Proje Aşamaları)
+- [Kullanılan Teknolojiler](#Kullanılan-Teknolojiler)
+- [Keşifsel Veri Analizi](#keşifsel-veri-analizi)
+- [Sonuçlar](#sonuçlar)
+- [Stratejik Çıkarımlar ve Öneriler](#stratejik-çıkarımlar-ve-Öneriler)
+- [Kaggle Proje Linki](#kaggle-proje-linki)
 İçindekiler
 Proje Aşamaları
 Veri Seti
@@ -16,7 +22,7 @@ Sonuçlar ve Değerlendirme
 Çözüm Önerileri
 
 
-Proje dört ana aşamadan oluşmaktadır:
+Proje Aşamaları
 
 1. Model Kurulumu ve Eğitimi
 Derin Konvolüsyonel Sinir Ağı (CNN) modeli kurularak eğitilmiştir.
@@ -30,22 +36,30 @@ Veri Seti
 Proje, hayvan görselleri içeren geniş bir veri setini kullanmaktadır. Bu veri seti, her bir görseli doğru bir şekilde etiketleyerek modelin eğitiminde kullanılmakta ve doğruluğunu artırmaya yardımcı olmaktadır.
 
 Kullanılan Teknolojiler
-Python
-TensorFlow/Keras
-OpenCV
-NumPy
+-Python
+-TensorFlow/Keras
+-OpenCV
+-NumPy
+
 Adımlar
+
 Görsel Yükleme ve Etiketleme
 cv2.imread() ile görseller yüklenir ve modelin eğitimine uygun şekilde etiketlenir.
 Görseller, 0-1 aralığında normalize edilir.
+
 Veri Artırma
+
 Eğitim verileri üzerinde veri artırma işlemleri (train_datagen) ile resimler döndürülür, kaydırılır, kırpılır ve yakınlaştırılır.
 Test verileri sadece normalizasyon ile işlenir (test_datagen).
+
 CNN Modeli
+
 Modelde 4 adet konvolüsyonel katman (Conv2D) ve her katmandan sonra max pooling uygulanmıştır.
 Batch normalization, modelin daha hızlı öğrenmesini sağlar.
 Modelde, dropout katmanları aşırı öğrenmeyi engellemek için kullanılmıştır.
+
 Eğitim Aşaması
+
 TestAccuracyCallback sınıfı ile modelin her epoch sonunda test doğruluğu izlenir.
 ModelCheckpoint ile en iyi model kaydedilir.
 EarlyStopping ile aşırı öğrenme engellenir.
