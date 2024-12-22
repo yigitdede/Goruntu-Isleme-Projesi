@@ -11,6 +11,7 @@ Bu proje, 10 farklı hayvan türü (Leopar, Dolphin, Aslan, Tilki, Moose, Tavşa
 - [Manipülasyon](#Manipülasyon)
 - [Sonuçlar ve Değerlendirme](#Sonuçlar-ve-Değerlendirme)
 - [Çözüm Önerileri](#Çözüm-Önerileri)
+- [Colab Proje Linki](#Colab-Proje-Linki)
 
 ## Proje Aşamaları
 
@@ -77,3 +78,7 @@ Model, görsel manipülasyonlara karşı duyarlı ve renk düzeltme gibi yöntem
 Daha fazla veri ve veri artırma teknikleri kullanılmalıdır.
 Model mimarisi iyileştirilmelidir.
 Modelin manipülasyona dayanıklılığını artırmaya yönelik ek yöntemler kullanılmalıdır.
+
+## Colab Proje Linki
+
+Projenin tamamına ve kod örneklerine [buradan ulaşabilirsiniz](https://colab.research.google.com/drive/1llZCIpSDs6PyaNfH6ufwspA7B0AjZI8N#scrollTo=iMmy_VAgS3N9).
