@@ -1,6 +1,6 @@
 # Goruntu-Isleme-Projesi
 
-Bu proje, 10 farklı hayvan türü (Leopar, Dolphin, Aslan, Tilki, Moose, Tavşan, At, Sincap, Yarasa, Goril) sınıflandırmasını amaçlamaktadır. Görüntü işleme ve derin öğrenme teknikleriyle modelin doğruluğu artırılmaya çalışılmıştır. Ayrıca, modelin manipülasyona karşı nasıl sonuçlar vereceği de test edilmiş olup bu sonuçlar neticesinde çeşitli önerilerde bulunulmuştur.
+Bu proje, 10 farklı hayvan türü (Leopar, Yunus, Aslan, Tilki, Fare, Tavşan, At, Sincap, Yarasa, Goril) sınıflandırmasını amaçlamaktadır. Görüntü işleme ve derin öğrenme teknikleriyle modelin doğruluğu artırılmaya çalışılmıştır. Ayrıca, modelin manipülasyona karşı nasıl sonuçlar vereceği de test edilmiş olup bu sonuçlar neticesinde çeşitli önerilerde bulunulmuştur.
 ## İçindekiler
 - [Proje Aşamaları](#Proje-Aşamaları)
 - [Kullanılan Teknolojiler](#Kullanılan-Teknolojiler)
