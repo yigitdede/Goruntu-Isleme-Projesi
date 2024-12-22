@@ -3,7 +3,7 @@
 Bu proje, 10 farklı hayvan türü (Leopar, Dolphin, Aslan, Tilki, Moose, Tavşan, At, Sincap, Yarasa, Goril) sınıflandırmasını amaçlamaktadır. Görüntü işleme ve derin öğrenme teknikleriyle modelin doğruluğu artırılmaya çalışılmıştır. Ayrıca, modelin manipülasyona karşı dayanıklılığı çeşitli testlerle değerlendirilmiştir.
 ## İçindekiler
 - [Proje Aşamaları](#Proje-Aşamaları)
-- [Yararlanılan Teknolojiler](#Yararlanılan-Teknolojiler)
+- [Kullanılan Teknolojiler](#Kullanılan-Teknolojiler)
 - [Görsel Yükleme ve Etiketleme](#Görsel-Yükleme-ve-Etiketleme)
 - [Veri Artırma](#Veri-Artırma)
 - [CNN Modeli](#CNN-Modeli)
