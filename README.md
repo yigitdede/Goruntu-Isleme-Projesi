@@ -12,7 +12,7 @@ Bu proje, 10 farklı hayvan türü (Leopar, Dolphin, Aslan, Tilki, Moose, Tavşa
 - [Sonuçlar ve Değerlendirme](#Sonuçlar-ve-Değerlendirme)
 - [Çözüm Önerileri](#Çözüm-Önerileri)
 
-##Proje Aşamaları
+## Proje Aşamaları
 
 1. Model Kurulumu ve Eğitimi
 Derin Konvolüsyonel Sinir Ağı (CNN) modeli kurularak eğitilmiştir.
@@ -25,7 +25,7 @@ Manipülasyon ve renk sabitliği uygulamaları sonrası modelin performansı kar
 Veri Seti
 Proje, hayvan görselleri içeren geniş bir veri setini kullanmaktadır. Bu veri seti, her bir görseli doğru bir şekilde etiketleyerek modelin eğitiminde kullanılmakta ve doğruluğunu artırmaya yardımcı olmaktadır.
 
-##Kullanılan Teknolojiler
+## Kullanılan Teknolojiler
 
 -Python
 
@@ -35,46 +35,45 @@ Proje, hayvan görselleri içeren geniş bir veri setini kullanmaktadır. Bu ver
 
 -NumPy
 
-Adımlar
 
-##Görsel Yükleme ve Etiketleme
+## Görsel Yükleme ve Etiketleme
 cv2.imread() ile görseller yüklenir ve modelin eğitimine uygun şekilde etiketlenir.
 Görseller, 0-1 aralığında normalize edilir.
 
-##Veri Artırma
+## Veri Artırma
 
 Eğitim verileri üzerinde veri artırma işlemleri (train_datagen) ile resimler döndürülür, kaydırılır, kırpılır ve yakınlaştırılır.
 Test verileri sadece normalizasyon ile işlenir (test_datagen).
 
-##CNN Modeli
+## CNN Modeli
 
 Modelde 4 adet konvolüsyonel katman (Conv2D) ve her katmandan sonra max pooling uygulanmıştır.
 Batch normalization, modelin daha hızlı öğrenmesini sağlar.
 Modelde, dropout katmanları aşırı öğrenmeyi engellemek için kullanılmıştır.
 
-##Eğitim Aşaması
+## Eğitim Aşaması
 
 TestAccuracyCallback sınıfı ile modelin her epoch sonunda test doğruluğu izlenir.
 ModelCheckpoint ile en iyi model kaydedilir.
 EarlyStopping ile aşırı öğrenme engellenir.
 
-##Manipülasyon
+## Manipülasyon
 
 Test setindeki görsellerin parlaklık ve kontrast manipülasyonu yapılır.
 Manipüle edilen görseller kaydedilir ve modelin doğruluğu test edilir.
 
-##Sonuçlar ve Değerlendirme
+## Sonuçlar ve Değerlendirme
 
 Performans Değerlendirmesi
 Orijinal Test Seti: Modelin doğruluğu %55.23.
 Manipüle Edilmiş Test Seti: Görsellerde kontrast artırma ve döndürme işlemleri sonrası doğruluk %11.85'e düşmüştür.
 Renk Sabitliği Uygulanan Test Seti: Renk sabitliği uygulanmış görsellerde doğruluk %11.92'ye çıkmıştır.
 
-##Sonuçlar:
+## Sonuçlar:
 
 Model, görsel manipülasyonlara karşı duyarlı ve renk düzeltme gibi yöntemler sınırlı bir iyileşme sağlamıştır. Bu, modelin manipülasyona karşı dayanıklı olmadığını ve iyileştirmeler yaparak daha güçlü hale getirilmesi gerektiğini göstermektedir.
 
-##Çözüm Önerileri:
+## Çözüm Önerileri:
 Daha fazla veri ve veri artırma teknikleri kullanılmalıdır.
 Model mimarisi iyileştirilmelidir.
 Modelin manipülasyona dayanıklılığını artırmaya yönelik ek yöntemler kullanılmalıdır.
